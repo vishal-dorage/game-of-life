@@ -8,6 +8,10 @@ RUN apt update
 
 RUN apt install default-jdk -y
 
-ENTRYPOINT mvn jetty:run
+COPY gameoflife-web/* /home/ubuntu/
+
+WORKDIR /home/ubuntu/gameoflife-web/
+
+CMD mvn jetty:run
 
 EXPOSE 9090
