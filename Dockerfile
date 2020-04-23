@@ -6,6 +6,4 @@ WORKDIR /usr/app
 
 EXPOSE 9090
 
-ENTRYPOINT ["java", "-jar", "gameoflife.war"]
-
 CMD mvn jetty:run
