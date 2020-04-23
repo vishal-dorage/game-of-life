@@ -8,6 +8,6 @@ RUN apt update
 
 RUN apt install default-jdk -y
 
-CMD mvn jetty:run
+ENTRYPOINT mvn jetty:run
 
 EXPOSE 9090
