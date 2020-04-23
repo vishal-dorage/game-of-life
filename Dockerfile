@@ -12,6 +12,4 @@ COPY gameoflife-web/* /home/ubuntu/
 
 WORKDIR /home/ubuntu/gameoflife-web/target/
 
-CMD mvn jetty:run
 
-EXPOSE 9090
