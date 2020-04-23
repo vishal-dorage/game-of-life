@@ -10,7 +10,7 @@ RUN apt install default-jdk -y
 
 COPY gameoflife-web/* /home/ubuntu/
 
-WORKDIR /home/ubuntu/gameoflife-web/
+WORKDIR /home/ubuntu/gameoflife-web/target/
 
 CMD mvn jetty:run
 
