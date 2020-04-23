@@ -1,10 +1,4 @@
-FROM ubuntu
-
-RUN apt update
-
-RUN apt install maven -y
-
-RUN apt update
+FROM maven
 
 RUN apt install default-jdk -y
 
