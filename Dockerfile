@@ -8,6 +8,6 @@ RUN apt update
 
 RUN apt install openjdk-8-jdk -y
 
-COPY gameoflife-web/* /home/ubuntu/
+COPY test/* /home/ubuntu/
 
 WORKDIR /home/ubuntu/
