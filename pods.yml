@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: javaapp
+  labels:
+    app: javaapp
+spec:
+  containers:
+    - name: javaapp
+      image: vishaldorage/kubernetes:tagVersion
+      ports:
+        - containerPort: 8080
