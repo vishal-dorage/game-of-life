@@ -1,13 +1,8 @@
-FROM ubuntu
+FROM tomcat:8-jre8
 
-RUN apt update
+RUN rm -rf /usr/local/tomcat/webapps/*
 
-RUN apt install maven -y
+COPY gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/ROOT.war
 
-RUN apt update
-
-RUN apt install openjdk-8-jdk -y
-
-COPY ./* /home/ubuntu/
-
-WORKDIR /home/ubuntu/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
