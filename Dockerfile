@@ -6,7 +6,7 @@ RUN apt install maven -y
 
 RUN apt update
 
-RUN apt install default-jdk -y
+RUN apt install openjdk-8-jdk -y
 
 COPY gameoflife-web/* /home/ubuntu/
 
